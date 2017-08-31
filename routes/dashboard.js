@@ -1,5 +1,5 @@
 /**
- * Created by devanshis24 on 11/24/2016.
+ * Created by lokesh on 11/24/2016.
  */
 exports.patientDashboard = function (req,res) {
 console.log("reqyest " +req.session.user );

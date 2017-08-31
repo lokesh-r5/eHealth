@@ -1,5 +1,5 @@
 /**
- * Created by raghu on 11/30/2016.
+ * Created by lokesh on 11/30/2016.
  */
 var message = require('../models/messageSchema');
 exports.addMessage=function(req,res){

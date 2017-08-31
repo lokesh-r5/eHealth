@@ -1,5 +1,5 @@
 /**
- * Created by devanshis24 on 11/26/2016.
+ * Created by lokesh on 11/26/2016.
  */
 var patientDashApp = angular.module('patientDashApp', ['ui.router', 'ngStorage','highcharts-ng', 'pascalprecht.translate']);
 patientDashApp.config(function($stateProvider, $urlRouterProvider, $translateProvider) {

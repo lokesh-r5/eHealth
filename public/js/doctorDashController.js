@@ -1,8 +1,8 @@
 /**
- * Created by devanshis24 on 11/29/2016.
+ * Created by lokesh on 11/29/2016.
  */
 /**
- * Created by devanshis24 on 11/26/2016.
+ * Created by lokesh on 11/26/2016.
  */
 var doctorDashApp = angular.module('doctorDashApp', ['ui.router', 'ngStorage', 'ui.calendar', 'ui.bootstrap','pascalprecht.translate']);
 doctorDashApp.config(function($stateProvider, $urlRouterProvider,$translateProvider) {

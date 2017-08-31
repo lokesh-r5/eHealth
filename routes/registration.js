@@ -1,5 +1,5 @@
 /**
- * Created by devanshis24 on 11/23/2016.
+ * Created by lokesh on 11/23/2016.
  */
 var patient = require('../models/patientSchema');
 var doctor = require('../models/doctorSchema');
