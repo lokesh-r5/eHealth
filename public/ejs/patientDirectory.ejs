@@ -1,0 +1,192 @@
+<div class="container" style="margin-top: 150px">
+    <div class="row">
+        <div id="container3" style="height: 400px"></div>
+    </div><br><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div id="container" style="height: 400px"></div>
+        </div>
+        <div class="col-md-6">
+            <div id="container1" style="height: 400px"></div>
+            <div class="row"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-9">
+            <button class="btn btn-info" id="plain">Plain</button>
+            <button class="btn btn-success" id="inverted">Inverted</button>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="container" style="height: 400px"></div>
+<script>
+    $(function () {
+
+        Highcharts.chart('container', {
+            chart: {
+                type: 'pie',
+                options3d: {
+                    enabled: true,
+                    alpha: 45,
+                    beta: 0
+                }
+            },
+            title: {
+                text: 'Disease Distribution'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    depth: 35,
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}'
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Patient Distribution',
+                data: [
+                    ['Aging', 20.0],
+                    ['Dental', 20],
+                    {
+                        name: 'Eye',
+                        y: 30,
+                        sliced: true,
+                        selected: true
+                    },
+                    ['Fitness', 10],
+                    ['Obesity', 10],
+                    ['Others', 10]
+                ]
+            }]
+        });
+    });
+
+    var aging = parseInt(localStorage.getItem('ngStorage-aging'));
+    console.log("aging + : " + localStorage.getItem('ngStorage-aging'));
+    var dental =parseInt(localStorage.getItem('ngStorage-dental'));
+    var eye = parseInt(localStorage.getItem('eye'));
+    var physio = parseInt(localStorage.getItem('ngStorage-physio'));
+    var fitness = parseInt(localStorage.getItem('ngStorage-fitness'));
+    var chart = Highcharts.chart('container1', {
+
+        title: {
+            text: 'Patient Rate'
+        },
+
+        subtitle: {
+            text: 'Number of patients coming for different diseases'
+        },
+
+        xAxis: {
+            title: {
+                text : 'Types of diseases'
+            },
+            categories: ['Aging', 'Dental', 'Eye Care', 'Physiotherphy', 'Fitness']
+        },
+        yAxis: {
+            title: {
+                text : 'Number of patients'
+            }
+        },
+
+        series: [{
+            type: 'column',
+            colorByPoint: true,
+            data: [aging,dental,eye,physio,fitness],
+            showInLegend: false
+        }]
+
+    });
+
+
+    $('#plain').click(function () {
+        chart.update({
+            chart: {
+                inverted: false,
+                polar: false
+            },
+            subtitle: {
+                text: 'Plain'
+            }
+        });
+    });
+
+    $('#inverted').click(function () {
+        chart.update({
+            chart: {
+                inverted: true,
+                polar: false
+            },
+            subtitle: {
+                text: 'Inverted'
+            }
+        });
+    });
+
+    $('#polar').click(function () {
+        chart.update({
+            chart: {
+                inverted: false,
+                polar: true
+            },
+            subtitle: {
+                text: 'Polar'
+            }
+        });
+    });
+
+    $('#container3').highcharts({
+        title: {
+            text: 'Patient Rate Comparision'
+        },
+
+        subtitle: {
+            text: 'Number of patients coming for hospital / doctor'
+        },
+        yAxis: {
+            title: {
+          text : 'Number of patients'
+            }
+        },
+        chart: {
+            type: 'column',
+            margin: 75,
+            options3d: {
+                enabled: true,
+                alpha: 15,
+                beta: 15,
+                depth: 110
+            }
+        },
+        plotOptions: {
+            column: {
+                depth: 40,
+                stacking: true,
+                grouping: false,
+                groupZPadding: 10
+            }
+        },
+        series: [{
+            name: "Accepted Patients",
+            data: [1, 2, 4, 3, 2, 4],
+            stack: 0
+        }, {
+            name : "Pending Patients",
+            data: [5, 6, 3, 4, 1, 2],
+            stack: 0
+        }, {
+            name: "Total Patients",
+            data: [7, 9, 8, 7, 5, 8],
+            stack: 1
+        }]
+    });
+
+</script>

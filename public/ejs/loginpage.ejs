@@ -1,0 +1,33 @@
+<html>
+<head>
+
+</head>
+<body>
+<div class="container-fluid" style="margin-top: 180px;background-color: aliceblue;vertical-align: middle">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" style="background-color:#364150;border-color: aliceblue;border-style: solid;border-width: 2px;border-radius: 15px 50px;padding: 10px">
+        <div class="navbar" style="height: 20px;background-color: #2b3643;color: aliceblue;font-size: larger;border-radius: 15px 50px;padding: 10px"><center><b style=""translate="LOGIN_AS_PATIENT"></b></center></div>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1" style="color: aliceblue;"translate="EMAIL_ADDRESS"></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ng-model="email">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1" style="color: aliceblue;"translate="PASSWORD"></label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" ng-model="password">
+            </div>
+
+            <center><button type="submit" class="btn btn-primary" style="background-color: #2b3643;border-color: aliceblue" ng-click="login()"translate="LOGIN"></button></center>
+        </form>
+        <button ng-click="changeLanguage('es')">हिंदी</button>
+        <button ng-click="changeLanguage('fr')">తెలుగు</button>
+        <button ng-click="changeLanguage('en')">English</button>
+        <p style="margin-top: 10px;color: white" translate="DONT_HAVE_ACCOUNT"></P>
+        <P translate="REGISTER_AS_PATIENT_CLIENT"></p>
+    </div>
+    <div class="col-sm-4"></div>
+
+</div>
+</body>
+</html>

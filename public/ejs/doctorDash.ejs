@@ -1,0 +1,50 @@
+<html>
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+</head>
+<body>
+<div style="margin: 100px;background-color: aliceblue">
+
+    <table id="example" class="table table-hover" style="text-align: center">
+        <thead style="text-align: center">
+        <tr>
+            <th style="text-align: center">Patient Name</th>
+            <th style="text-align: center">Date / Time</th>
+            <th style="text-align: center">Service</th>
+            <th style="text-align: center">Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="x in appointments | filter:q | startFrom:currentPage*pageSize | limitTo:pageSize" ng-click='getselectedRow(a)'>
+            <td>{{ x.name }}</td>
+            <td>{{ x.appointmentDate }}</td>
+            <td>{{ x.service }}</td>
+            <td><span class="btn btn-success" ng-value='x' ng-click="acceptAppointment(x)">Accept</span></td>
+
+        </tr>
+        </tbody>
+    </table>
+<input ng-model="q" id="search" class="form-control" placeholder="Filter text">
+    <select ng-model="pageSize" id="pageSize" class="form-control">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+     </select>
+    <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+        Previous
+    </button>
+    {{currentPage+1}}/{{numberOfPages()}}
+    <button ng-disabled="currentPage >= getData().length/pageSize - 1" ng-click="currentPage=currentPage+1">
+        Next
+    </button>
+</div>
+<script>$(document).ready(function() {
+        $('#example').DataTable();
+    } );</script>
+</body>
+</html>

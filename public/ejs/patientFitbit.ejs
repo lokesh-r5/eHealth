@@ -1,0 +1,70 @@
+
+<style>
+
+
+
+    /*==========  Mobile First Method  ==========*/
+    @media only screen and (max-width : 320px) {
+        .clearfix{
+            width: 100% !important;
+            clear: both !important;
+        }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+        .clearfix{
+            width: 100% !important;
+            clear: both !important;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .clearfix{
+            width: 100% !important;
+            clear: both !important;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    .pad_50{
+        padding: 15px; width:45%; float:left;    }
+</style>
+<body>
+<div style="padding-top:50px;margin-top: 50px; width:100%; ">
+    <div class="container">
+        <div class="row"><center>
+    <div style="font-size: 32px;color: aliceblue ;">Provide Dates To Compare</div><br>
+    <form>
+        <input  type="date" id="start" ng-model="start">
+        <!--    <input type="date" id="end" id="start" ng-model="end">-->
+        <input class="btn btn-success" type="submit" ng-click="fetchDynamicDate()">
+        <!--    <input type="submit" ng-click="demoData()">-->
+    </form></center>
+    </div>
+        <div class="row" style="padding: 20px">
+            <highchart id="chart1"style="padding: 20px" config="heart" class="span10 col-xs-6 container-fluid row clearfix"></highchart>
+
+
+        <highchart style="padding: 20px" id="chart1" config="calorie" class="span10 col-xs-6 container-fluid row clearfix"></highchart>
+
+    </div>
+    <div class="row" style="padding: 20px">
+        <highchart id="chart1" config="steps" class="span10 col-xs-12 container-fluid row clearfix"></highchart>
+
+    </div>
+    </div>
+
+</div>
+<div id="dynamic_data"></div>
+</body>

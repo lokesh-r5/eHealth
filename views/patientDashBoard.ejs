@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="patientDashApp">
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%include cdn.ejs%>
+    <script src="/js/patientDashController.js"></script>
+    <script src="/js/highcharts.js"></script>
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="http://code.highcharts.com/highcharts.src.js"></script>
+    <!-- Template-->
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css" />
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="http://keenthemes.com/preview/metronic/theme/assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" /> </head>
+<!-- END HEAD -->
+
+</head>
+<body style="padding: 0px">
+
+
+<div ui-view="header"></div>
+<div ui-view="content"></div>
+<div ui-view="footer"></div>
+
+</body>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="routerApp">
+<head>
+    <title> find doctor online,doctor appointment, Patient dashboard, appointment</title>
+    <meta name="description" content="Awesome patient Dahboard Available for doctors communication in USA, alll States and city mainly in clifornia">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%include cdn.ejs%>
+    <script src="/js/indexStatesController.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+</head>
+<body style="padding: 0px;background-color:aliceblue;">
+<div ui-view="header"></div>
+<div ui-view="content"></div>
+<div ui-view="footer"></div>
+</body>
+</html>

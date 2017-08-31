@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        background-color: white;
+    }
+
+    .sidenav {
+
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+</style>
+<body>
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top" >
+    <!-- BEGIN HEADER INNER -->
+    <center>
+        <div class="page-header-inner ">
+            <!-- BEGIN LOGO -->
+
+            <div class="page-logo" style="">
+                <a href="/patientDashboard">
+                    <img src="https://ehealth.fbk.eu/sites/ehealth.fbk.eu/themes/fbkunit/logo-en.png" style="margin-top:-2px;opacity: 10%" width="150px" height="70px" alt="logo" class="logo-default" /> </a>
+                <div class="menu-toggler sidebar-toggler" onclick="openNav()">
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- END LOGO -->
+
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                <span></span>
+            </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+
+                <ul class="nav navbar-nav pull-right">
+
+
+                    <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <i>Notification</i>
+                            <span class="badge badge-default"> 7 </span>
+                        </a>
+
+                    </li>
+
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+
+                    <li class="dropdown dropdown-user">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <img alt="" class="img-circle" src="http://keenthemes.com/preview/metronic/theme/assets/layouts/layout/img/avatar3_small.jpg" />
+                            <span class="username username-hide-on-mobile"> <b ng-model="userName">{{userName}}</b> </span>
+                            <i class=""> </i>
+                        </a>
+
+                    </li>
+                    <li class="dropdown dropdown-user">
+                        <a ng-click="logout()" class="dropdown-toggle">
+                            <span class="username" > <b>Logout</b></span>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div></center>
+    <!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+
+<div id="mySidenav" class="sidenav" style="background-color: #364150; height: 100%">
+
+    <div class="page-container" style="height: 100%">
+    <div class="page-sidebar-wrapper">
+
+        <div class="page-sidebar navbar-collapse collapse">
+            <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+
+                <li class="heading">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    <h3 class="uppercase">Features</h3></a>
+                </li>
+                <li class="nav-item" >
+                    <a ui-sref="app" class="nav-link nav-toggle">
+
+                        <span class="title">Dashboard</span>
+                        <span class="selected"></span>
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item"  >
+                    <a  ui-sref="app.appointment" ui-sref-active="active" class="nav-link nav-toggle">
+
+                        <span class="title">Book Appointment</span>
+
+                    </a>
+
+                </li>
+                <li class="nav-item" >
+                    <a ui-sref="app.heartRate" ui-sref-active="active" class="nav-link nav-toggle">
+
+                        <span class="title">Real Time Hear Rate</span>
+
+                    </a>
+
+                </li>
+                <li class="nav-item"  >
+                    <a ui-sref="app.doctorDirectory" ui-sref-active="active" class="nav-link nav-toggle">
+
+                        <span class="title">Doctor Directory</span>
+
+                    </a>
+
+                </li>
+                <li class="nav-item" >
+                    <a ui-sref="app.chat" ui-sref-active="active" class="nav-link nav-toggle">
+
+                        <span class="title">Chat House</span>
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- BEGIN QUICK SIDEBAR -->
+    <a href="javascript:;" class="page-quick-sidebar-toggler">
+        <i class="icon-login"></i>
+
+    </a>
+    <div class="page-quick-sidebar-wrapper" data-close-on-body-click="false">
+        <div class="page-quick-sidebar">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="javascript:;" data-target="#quick_sidebar_tab_1" data-toggle="tab"> Users
+                        <span class="badge badge-danger">2</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-target="#quick_sidebar_tab_2" data-toggle="tab"> Alerts
+                        <span class="badge badge-success">7</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> More
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
+                                <i class="icon-bell"></i> Alerts </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
+                                <i class="icon-info"></i> Notifications </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
+                                <i class="icon-speech"></i> Activities </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
+                                <i class="icon-settings"></i> Settings </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- END QUICK SIDEBAR -->
+</div>
+</div>
+<!-- END CONTAINER -->
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "235px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0px";
+    }
+
+
+</script>
+</body>
+</html>

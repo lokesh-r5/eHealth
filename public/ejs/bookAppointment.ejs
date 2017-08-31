@@ -1,0 +1,72 @@
+
+<div class="container-fluid" style="background-color:aliceblue;margin-top: 80px">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" style="background-color:#364150;border-color: aliceblue;border-style: solid;border-width: 2px;border-radius: 15px 50px;padding: 10px">
+        <div class="navbar" style="height: 20px;background-color: #2b3643;color: aliceblue;font-size: larger;padding: 10px"><center><b style="" translate="BOOK_AN_APPOINTMENT"></b></center></div>
+        <form>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <label for="name" style="color: aliceblue;"translate="NAME"></label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Full Name" ng-model="name">
+                </div>
+                <div class="col-sm-6">
+                    <label for="email" style="color: aliceblue;" translate="EMAIL"></label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" ng-model="email">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <label for="birthDate" style="color: aliceblue;"translate="DATE_OF_BIRTH"></label>
+                    <input type="date" class="form-control" id="birthDate" placeholder="Select your Date of Birth" ng-model="dob">
+                </div>
+                <div class="col-sm-6">
+                <label for="gender" style="color: aliceblue;"translate="GENDER"></label>
+                <select class="form-control" name="gender" id="gender" ng-model="gender" tabindex="0">
+                    <option value="Male"translate="MALE"></option>
+                    <option value="Female"translate="FEMALE"></option>
+                </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-6">
+                <label for="service" style="color: aliceblue;"translate="SERVICE"></label>
+                <select class="form-control" name="service" id="service" ng-model="service" tabindex="0">
+                    <option value="Dental Care"translate="DENTAL_CARE"></option>
+                    <option value="Aging Solution"translate="AGING_SOLUTIONS"></option>
+                    <option value="Eye Care"translate="EYE_CARE"></option>
+                    <option value="Physiotherapy"translate="PHYSIOTHERAPY"></option>
+                    <option value="Fitness"translate="FITNESS"></option>
+                </select>
+                </div>
+                <div class="col-sm-6">
+                    <label for="doctorName" style="color: aliceblue;"translate="DOCTOR_NAME"></label>
+                    <select class="form-control" name="doctorName" id="doctorName" ng-model="doctorName" ng-options="x for x in doctorNames" tabindex="0">
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-6">
+                <label for="appointmentDate" style="color: aliceblue;"translate="APPOINTMENT_DATE"></label>
+                <input type="datetime-local" class="form-control" id="appointmentDate" placeholder="Appointment Date" ng-model="appointmentDate">
+                </div>
+                <div class="col-sm-6">
+                    <label for="phone" style="color: aliceblue;"translate="PHONE_NUMBER"></label>
+                    <input type="phone" class="form-control" id="phone" placeholder="Phone" ng-model="phone">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="serviceDesc" style="color: aliceblue;"translate="SERVICE_DESCRIPTION"></label>
+                <textarea rows="4" cols="50" class="form-control" id="serviceDesc" placeholder="Service Description" ng-model="serviceDesc">
+                </textarea>
+            </div>
+
+            <center><button type="submit" class="btn btn-primary" style="background-color: #2b3643;border-color: aliceblue;width: 150px" ng-click="bookAppointment()"translate="BOOK_APPOINTMENT"></button></center>
+        </form>
+        <button ng-click="changeLanguage('es')">हिंदी</button>
+        <button ng-click="changeLanguage('fr')">తెలుగు</button>
+        <button ng-click="changeLanguage('en')">English</button>
+    </div>
+</div>

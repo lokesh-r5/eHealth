@@ -1,0 +1,32 @@
+<div class="container-fluid" style="margin-top: 100px" ng-init="getDoctors()">
+    <div ng-show="showMessage" class="alert alert-success alert-dismissible">
+        Message Sent!
+    </div>
+
+    <div class="col-sm-3">
+
+    </div>
+    <div class="col-sm-6" ng-init="getMessages()">
+        <div class="form-group">
+            <label for="doctorName" style="color: aliceblue;font-size: 24px"translate="DOCTOR_NAME"></label>
+            <select class="form-control" name="doctorName" id="doctorName" ng-model="doctorName" ng-options="x for x in doctorNames" tabindex="0">
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="serviceDesc" style="color: aliceblue"translate="MESSAGES"></label>
+            <textarea rows="4" cols="50" class="form-control" id="serviceDesc" placeholder="Chat Message" ng-model="message">
+                        </textarea>
+        </div>
+
+        <center><button type="submit" class="btn btn-primary" style="background-color: #2b3643;border-color: aliceblue;width: 150px" ng-click="sendMessage()"translate="SEND_MESSAGE"></button></center>
+        <div><h3 style="font:PLAYFAIR DISPLAY;color: aliceblue"translate="YOUR_MESSAGES"></h3></div>
+
+        <div ng-repeat="message in messages" style="color: #777;background-color: #f5f5f5">
+            <div style="padding: 5px"><strong style="color:#222;">{{message.from}}:</strong></div>
+            <div style="padding: 5px"><p>{{message.message}}</p></div>
+        </div>
+    </div>
+    <button ng-click="changeLanguage('es')">हिंदी</button>
+    <button ng-click="changeLanguage('fr')">తెలుగు</button>
+    <button ng-click="changeLanguage('en')">English</button>
+</div>

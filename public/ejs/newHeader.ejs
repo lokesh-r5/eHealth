@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>e-Health Care</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Magnific Popup-->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Cards -->
+    <link rel="stylesheet" href="css/cards.css">
+
+
+
+    <style>
+        body{
+            background: #000;
+            color: lime;
+        }
+
+        /* font-size, positioning, visibility*/
+        p{
+            font-size: 34px;
+            margin: 30px;
+            white-space:nowrap;
+            overflow: hidden;
+            width: 14em;
+            animation: type 5s steps(50, end) 1;
+        }
+
+        /* let's animate, it's super easy */
+        @keyframes type{
+            from{ width: 0;}
+        }
+        /*looks like something is wrong, Fixed!!! */
+
+        /*let's make it more realistic, so I added span tag, let's animate span*/
+        span{
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink{
+            to{ opacity: .0;}
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            try {
+                TagCanvas.Start('myCanvas','tags',{
+//            textColour: '#ff0000',
+                    outlineColour: '#333',
+                    textFont: 'Impact,"Arial Black",sans-serif',
+                    textColour: null,
+                    textHeight: 15,
+                    reverse: true,
+                    depth: 0.8,
+                    maxSpeed: 0.05
+                });
+            } catch(e) {
+                // something went wrong, hide the canvas container
+                document.getElementById('myCanvasContainer').style.display = 'none';
+            }
+        };
+    </script>
+</head>
+<body >
+
+<div id="fh5co-page">
+
+
+
+    <div class="fh5co-cover fh5co-cover-style-2 js-full-height" data-stellar-background-ratio="0.5" data-next="yes"  style="background-image: url(images/full_1.jpg);">
+		  	<span class="scroll-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s" style="margin-top:-40px;">
+				<a href="#">
+					<span class="mouse"><span></span></span>
+				</a>
+			</span>
+        <div class="fh5co-overlay">
+
+        </div>
+        <div class="fh5co-cover-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-push-4 col-md-4 full-height js-full-height">
+                        <div class="fh5co-cover-intro">
+                            <h1 class="cover-text-lead wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s"><p>Welcome to e-Health Care<span>|</span></p></h1>
+                            <h2 class="cover-text-sublead wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s" style="margin-left:40px;">A better way to connect with your doctor.</h2>
+                            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s"><a href="#team" class="btn btn-primary btn-outline btn-lg">See Our Team</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="fh5co-project-style-2" style="background-color:#e6ffff;" >
+        <div class="container">
+            <div class="row p-b">
+                <div class=" text-center">
+                    <h2 class="fh5co-heading wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        <p>Features We Provide
+                            <span>...|<span>
+                    </span></span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="fh5co-projects">
+            <ul>
+                <li class="wow fadeInUp" style="background-color: #ccffff" data-wow-duration="1s" data-wow-delay="1.4s" data-stellar-background-ratio="0.5">
+                    <a href="#">
+                        <div class="fh5co-overlay"></div>
+                        <div class="container">
+                            <div class="fh5co-text">
+                                <div class="fh5co-text-inner">
+                                    <div class="row" >
+                                        <div class="col-md-6">
+                                            <h3 class="animated infinite fadeInLeft " style="animation-duration: 3s;animation-delay: 2s;margin-top:40px;">
+                                                Doctors
+                                            </h3>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <ul>
+                                                <li class="animated infinite fadeInRight " style="animation-duration: 3s;animation-delay: 2s;padding:10px; color:white">Check Appointments</li>
+                                                <li class="animated infinite fadeInRight " style="animation-duration: 3s;animation-delay: 2s;padding:10px; color:white">Check Your Statistics</li>
+                                                <li class="animated infinite fadeInRight " style="animation-duration: 3s;animation-delay: 2s;padding:10px; color:white">Deal with your patients</li>
+                                                </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="wow fadeInUp" style="background-image: url(images/full_2.jpg);" data-wow-duration="1s" data-wow-delay="1.7s" data-stellar-background-ratio="0.5">
+                    <a href="#">
+                        <div class="fh5co-overlay"></div>
+                        <div class="container">
+                            <div class="fh5co-text">
+                                <div class="fh5co-text-inner">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h3 class="animated infinite fadeInLeft " style="animation-duration: 3s;animation-delay: 2s;margin-top:40px;">Patients</h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul>
+                                                <li class="animated infinite fadeInRight " style="animation-duration: 3s;animation-delay: 3s;padding:10px; color:white">Check Appointments</li>
+                                                <li class="animated infinite fadeInRight " style="animation-duration: 5s;animation-delay: 3s;padding:10px; color:white">Check Your Statistics</li>
+                                                <li class="animated infinite fadeInRight " style="animation-duration: 5s;animation-delay: 3s;padding:10px; color:white">Deal with your patients</li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="fh5co-features-style-1" style="background-image: url(images/full_4.jpg);" data-stellar-background-ratio="0.5">
+        <div class="fh5co-overlay"></div>
+        <div class="container" style="z-index: 3; position: relative;">
+            <div class="row p-b">
+                <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <h2 class="fh5co-heading animated bounceInLeft">Technologies we dived in ..!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="fh5co-features">
+                    <div class="fh5co-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                        <div class="icon"><i  class="glyphicon glyphicon-picture"></i></div>
+                        <h3>HTML5 and CSS3</h3>
+                        <p></p>
+                    </div>
+                    <div class="fh5co-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">
+                        <div class="icon"><i  class="glyphicon glyphicon-text-color"></i></div>
+                        <h3>ANGULAR and NODE</h3>
+                        <p></p>
+                    </div>
+                    <div class="fh5co-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
+                        <div class="icon"><i class=" icon-monitor"></i></div>
+                        <h3>MongoDB</h3>
+                        <p></p>
+                    </div>
+
+                    <div class="fh5co-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.7s">
+                        <div class="icon"><i class="glyphicon glyphicon-signal"></i></div>
+                        <h3>HIGH CHARTS</h3>
+                        <p></p>
+                    </div>
+                    <div class="fh5co-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
+                        <div class="icon"><i class="glyphicon glyphicon-tent"></i></div>
+                        <h3>ANIMATIONS</h3>
+                        <p></p>
+                    </div>
+                    <div class="fh5co-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="2.3s">
+                        <div class="icon"><i  class="glyphicon glyphicon-bitcoin"></i></div>
+                        <h3>BCRYPT</h3>
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="fh5co-content-style-6" id="team">
+        <div class="container">
+            <div class="row p-b text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">TEAM e-Health Care</h2>
+                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s"></p>
+                </div>
+            </div>
+            <div class="row" style="margin-left:100px">
+                <div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12 animate fadeInLeft"  data-wow-duration="1s" data-wow-delay=".5s">
+                    <a href="#" class="link-block">
+                        <figure><img src="images/naha.jpg" alt="Image" class="img-responsive img-rounded" style="height:200px;width:200px"></figure>
+                        <h3>Abhranil Naha</h3>
+                        <p></p>
+
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12 wow fadeInLeft"  data-wow-duration="1s" data-wow-delay=".8s">
+                    <a href="#" class="link-block">
+                        <figure><img src="images/devanshi_prof.jpg" alt="Image" class="img-responsive img-rounded" style="height:200px;width:200px"></figure>
+                        <h3>Devanshi Shah</h3>
+                        <p></p>
+
+                    </a>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12 wow fadeInLeft"  data-wow-duration="1s" data-wow-delay="1.1s">
+                    <a href="#" class="link-block">
+                        <figure><img src="images/yogi.jpg" alt="Image" class="img-responsive img-rounded" style="height:200px;width:200px"></figure>
+                        <h3>Lokesh</h3>
+                        <p></p>
+
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.4s">
+                    <a href="#" class="link-block">
+                        <figure><img src="images/raghu1.jpg" alt="Image" class="img-responsive img-rounded" style="height:200px;width:200px"></figure>
+                        <h3>Raghu Kolisetty</h3>
+                        <p></p>
+
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.4s">
+                    <a href="#" class="link-block">
+                        <figure><img src="images/yogi.jpg" alt="Image" class="img-responsive img-rounded" style="height:200px;width:200px"></figure>
+                        <h3>Yogesh Chauhan</h3>
+                        <p></p>
+
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="fh5co-counter-style-2" style="background-image: url(images/full_2.jpg);" data-stellar-background-ratio="0.5">
+            <div class="fh5co-overlay"></div>
+            <div class="container">
+
+                <div class="fh5co-section-content-wrap">
+                    <div class="fh5co-section-content">
+
+                        <div class="row">
+                            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                <div class="icon">
+                                    <i  class="glyphicon glyphicon-king"></i>
+                                </div>
+                                <span class="fh5co-counter js-counter" data-from="0" data-to="50" data-speed="5000" data-refresh-interval="50">57</span>
+                                <span class="fh5co-counter-label">Happy Patients</span>
+
+                            </div>
+                            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                                <div class="icon">
+                                    <i class="glyphicon glyphicon-pushpin"></i>
+                                </div>
+                                <span class="fh5co-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50">12</span>
+                                <span class="fh5co-counter-label">Happy Doctors</span>
+                            </div>
+                            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">
+                                <div class="icon">
+                                    <i class="glyphicon glyphicon-folder-open"></i>
+                                </div>
+                                <span class="fh5co-counter js-counter" data-from="0" data-to="45" data-speed="5000" data-refresh-interval="50">45</span>
+                                <span class="fh5co-counter-label">Total Appointments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fh5co-footer-style-3">
+            <div class="container">
+                <div class="row p-b">
+                    <div class="col-md-3 col-sm-6 fh5co-footer-widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="fh5co-logo"><span class="logo">e</span> e-Health</div>
+                        <p class="fh5co-copyright">&copy; CMPE 280  <br>Designed by <a target="_blank" href="http://freehtml5.co">Team e-Helath Care</a> </p>
+                    </div>
+                    <div class="col-md-2 col-sm-6 fh5co-footer-widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-2 col-sm-6 fh5co-footer-widget wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">
+
+                    </div>
+                    <div class="col-md-3 col-sm-6 fh5co-footer-widget wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
+                        <h3>Guided By</h3>
+
+                        <p><a href="#" class="btn btn-success btn-sm btn-outline">Prof. Chandrashekhar Vippulapati</a></p>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                </div>
+                <div class="row fh5co-made">
+
+                </div>
+            </div>
+        </div>
+        <!-- END footer -->
+
+    </div>
+    <!-- END page-->
+
+
+</body>
+</html>
