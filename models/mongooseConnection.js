@@ -2,7 +2,7 @@
  * Created by lokesh on 11/23/2016.
  */
 var mongoose = require("mongoose");
-dbURI = 'mongodb://localhost/fitbitData';
+dbURI = 'mongodb://lokesh:ehealth@ds163613.mlab.com:63613/ehealth-db';
 mongoose.connect(dbURI);
 
 mongoose.connection.on('connected', function () {
