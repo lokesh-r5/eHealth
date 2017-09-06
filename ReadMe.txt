@@ -16,4 +16,4 @@ In config.json file:
 3.ReadMe.txt :
 
 The application is also deployed in AWS EC2 Instance:
-http://ec2-35-164-39-68.us-west-2.compute.amazonaws.com:3000/
+https://ehealth-webapplication.herokuapp.com
