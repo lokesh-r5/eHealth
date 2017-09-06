@@ -11,7 +11,7 @@
       "tokenPath": "/oauth2/token"
     },
     "authorization_uri": {
-      "redirect_uri": "http://ec2-35-164-39-68.us-west-2.compute.amazonaws.com:3000/callback",
+      "redirect_uri": "https://ehealth-webapplication.herokuapp.com/#/:3000/callback",
       "response_type": "code",
       "scope": "activity nutrition profile settings sleep social weight heartrate",
       "state": "3(#0/!~"
