@@ -1,8 +1,8 @@
 {"fitbit": {
     "timeout": 10000,
     "creds": {
-      "clientID": "227XSV",
-      "clientSecret": "924f9d8073faf4498364f05d83cb8fa9"
+      "clientID": "228L98",
+      "clientSecret": "28bd859dc82697cb4111a88bfce2fc1f"
     },
     "uris": {
       "authorizationUri": "https://www.fitbit.com",
@@ -11,7 +11,7 @@
       "tokenPath": "/oauth2/token"
     },
     "authorization_uri": {
-      "redirect_uri": "http://ec2-35-164-39-68.us-west-2.compute.amazonaws.com:3000/callback",
+      "redirect_uri": "https://ehealth-webapplication.herokuapp.com",
       "response_type": "code",
       "scope": "activity nutrition profile settings sleep social weight heartrate",
       "state": "3(#0/!~"
