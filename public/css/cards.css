@@ -2866,11 +2866,15 @@ a:hover .lnk-icon-right {
 .fh5co-footer-style-3 {
   background: #262626;
   font-size: 15px;
-  padding-top: 0 !important;
 }
 .fh5co-footer-style-3 .fh5co-footer-widget {
   margin-bottom: 30px;
 }
+
+.fh5co-footer-style-6{
+    padding-top: 0 !important;
+}
+
 .fh5co-footer-style-3 .fh5co-logo {
   color: #fff;
   font-size: 24px;
