@@ -402,8 +402,8 @@ a:hover .lnk-icon-right {
   }
 }
 /*
-/////////////////////////////////////////////////// 
-2.0 NAVIGATIONS 
+///////////////////////////////////////////////////
+2.0 NAVIGATIONS
 ///////////////////////////////////////////////////
 */
 #fh5co-offcanvass {
@@ -871,9 +871,9 @@ a:hover .lnk-icon-right {
   }
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-3.0 COVERS 
+3.0 COVERS
 ///////////////////////////////////////////////////
 */
 .fh5co-cover {
@@ -962,9 +962,9 @@ a:hover .lnk-icon-right {
   z-index: 4;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-4.0 PROJECTS 
+4.0 PROJECTS
 ///////////////////////////////////////////////////
 */
 /* PROJECTS STYLE #1 */
@@ -1363,16 +1363,15 @@ a:hover .lnk-icon-right {
   transform: scale(1.1);
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-5.0 CONTENTS 
+5.0 CONTENTS
 ///////////////////////////////////////////////////
 */
 .fh5co-content-style-2,
 .fh5co-content-style-3,
 .fh5co-content-style-4,
 .fh5co-content-style-5,
-.fh5co-content-style-6,
 .fh5co-content-style-7,
 .fh5co-content-style-8,
 .fh5co-content-style-9,
@@ -1380,12 +1379,19 @@ a:hover .lnk-icon-right {
   padding: 5em 0;
   background: #fff;
 }
+
+.fh5co-content-style-6{
+  padding: 0 !important;
+}
+
 @media screen and (max-width: 768px) {
+  .fh5co-content-style-6{
+    padding: 0 !important;
+  }
   .fh5co-content-style-2,
   .fh5co-content-style-3,
   .fh5co-content-style-4,
   .fh5co-content-style-5,
-  .fh5co-content-style-6,
   .fh5co-content-style-7,
   .fh5co-content-style-8,
   .fh5co-content-style-9,
@@ -1819,9 +1825,9 @@ a:hover .lnk-icon-right {
   border-color: #035fc2;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-6.0 FEATURES 
+6.0 FEATURES
 ///////////////////////////////////////////////////
 */
 /* FEATURE STYLE #1 */
@@ -2179,9 +2185,9 @@ a:hover .lnk-icon-right {
   font-size: 40px;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-7.0 BLOGS 
+7.0 BLOGS
 ///////////////////////////////////////////////////
 */
 /* BLOG STYLE #1 */
@@ -2378,9 +2384,9 @@ a:hover .lnk-icon-right {
   transform: scale(1.1);
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
-8.0 BLOGS 
+8.0 BLOGS
 ///////////////////////////////////////////////////
 */
 .fh5co-team-style-1,
@@ -2586,7 +2592,7 @@ a:hover .lnk-icon-right {
   color: #1784fb;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
 9.0 FOOTERS
 ///////////////////////////////////////////////////
@@ -2940,7 +2946,7 @@ a:hover .lnk-icon-right {
   color: #fb4f59;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
 10.0 TESTIMONIALS
 ///////////////////////////////////////////////////
@@ -3069,7 +3075,7 @@ a:hover .lnk-icon-right {
   margin-bottom: 0;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
 11.0 TESTIMONIALS
 ///////////////////////////////////////////////////
@@ -3254,7 +3260,7 @@ a:hover .lnk-icon-right {
   background-color: #4F5F56;
 }
 
-/* 
+/*
 ///////////////////////////////////////////////////
 11.0 TESTIMONIALS
 ///////////////////////////////////////////////////
