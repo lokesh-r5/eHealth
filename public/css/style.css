@@ -1384,6 +1384,10 @@ a:hover .lnk-icon-right {
   padding: 0 !important;
 }
 
+#source_code{
+  margin: 0 30 30 0;
+}
+
 @media screen and (max-width: 768px) {
   .fh5co-content-style-6{
     padding: 0 !important;
